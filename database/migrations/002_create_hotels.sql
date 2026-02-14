@@ -6,10 +6,12 @@ CREATE TABLE hotels(
     address varchar(200) NOT NULL,
     city varchar(50) NOT NULL,
     state varchar(50),
-    country_code varchar(3) NOT NULL,
+    country_code varchar(2) NOT NULL,
     hotel_rating int,
-    phone_number int,
+    phone_number varchar(20),
     website varchar(200),
-    photo varchar(200) NOT NULL,
-    description varchar(300)
+    photo varchar(500) NOT NULL,
+    description TEXT,
+    destination_id int,
+    FOREIGN KEY (destination_id) REFERENCES destinations(id)
 )
