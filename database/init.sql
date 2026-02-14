@@ -1,0 +1,1 @@
+CREATE DATABASE plan_and_stay
